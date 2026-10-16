@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carta de Bebidas — Estancia del Sur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090B; --surface:#101216; --line:#262a31; --text:#f1ece3; --muted:#9a968d; --accent:#c9a66b;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--bg:#f6f2ea;--surface:#fffdf8;--line:#ddd5c4;--text:#1a1612;--muted:#6f675a;--accent:#8a6a2f}
+}
+:root[data-theme="light"]{--bg:#f6f2ea;--surface:#fffdf8;--line:#ddd5c4;--text:#1a1612;--muted:#6f675a;--accent:#8a6a2f}
+:root[data-theme="dark"]{--bg:#08090B;--surface:#101216;--line:#262a31;--text:#f1ece3;--muted:#9a968d;--accent:#c9a66b}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.5 Inter,system-ui,sans-serif}
+header{text-align:center;padding:48px 20px 28px}
+.brand{letter-spacing:.35em;font-size:12px;color:var(--accent);text-transform:uppercase}
+h1{font:500 clamp(40px,9vw,64px)/1.05 "Cormorant Garamond",Georgia,serif;margin:12px 0 6px}
+h1 em{color:var(--accent)}
+.sub{color:var(--muted);font-size:14px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none}
+nav::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:-1}
+nav a{flex:none;color:var(--text);text-decoration:none;font-size:13px;padding:7px 14px;border:1px solid var(--line);border-radius:999px}
+nav a:active{border-color:var(--accent);color:var(--accent)}
+main{max-width:720px;margin:0 auto;padding:8px 20px 48px}
+section{padding-top:36px}
+h2{font:600 30px/1.1 "Cormorant Garamond",Georgia,serif;margin:0 0 4px;display:flex;align-items:center;gap:14px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.note{color:var(--muted);font-size:13px;margin:0 0 6px}
+ul{list-style:none;margin:10px 0 0;padding:0}
+li{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+li .n{flex:0 1 auto}
+li small{color:var(--muted);font-size:13px}
+li .d{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:12px}
+li .p{font-weight:500;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 20px 40px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Estancia del Sur</div>
+  <h1>Carta de <em>bebidas</em></h1>
+</header>
+<nav id="nav"><a href="#tintos">Vinos tintos</a><a href="#blancos">Vinos blancos</a><a href="#dulces">Vinos dulces</a><a href="#rosados">Vinos rosados</a><a href="#espumantes">Espumantes</a><a href="#aperitivos">Aperitivos</a><a href="#cervezas">Cervezas</a><a href="#aguas">Aguas y sodas</a></nav>
+<main id="menu">
+<section id="tintos"><h2>Vinos tintos</h2><ul>
+<li><span class="n">Il Caprone <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$6.500</span></li>
+<li><span class="n">Rincón Famoso <small>· Tinto · 750 ml</small></span><span class="d"></span><span class="p">$7.900</span></li>
+<li><span class="n">Alambrado <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$7.900</span></li>
+<li><span class="n">Alambrado <small>· Cabernet · 750 ml</small></span><span class="d"></span><span class="p">$7.900</span></li>
+<li><span class="n">Alamos <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$8.200</span></li>
+<li><span class="n">Perro Callejero <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$8.200</span></li>
+<li><span class="n">Tomero <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$9.800</span></li>
+<li><span class="n">Trumpeter <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$9.900</span></li>
+<li><span class="n">Santa Julia Magna <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$10.500</span></li>
+<li><span class="n">Saint Felicien <small>· Pinot Noir · 750 ml</small></span><span class="d"></span><span class="p">$12.500</span></li>
+<li><span class="n">Trumpeter Reserva <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$13.300</span></li>
+<li><span class="n">Catena Zapata <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$17.300</span></li>
+<li><span class="n">Catena Zapata <small>· Cabernet · 750 ml</small></span><span class="d"></span><span class="p">$17.300</span></li>
+<li><span class="n">Luigi Bosca <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$17.800</span></li>
+<li><span class="n">Rutini <small>· Malbec - Cabernet · 750 ml</small></span><span class="d"></span><span class="p">$18.600</span></li>
+<li><span class="n">Cordero con Piel de Lobo <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$19.500</span></li>
+<li><span class="n">El Enemigo <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$26.400</span></li>
+<li><span class="n">Piattelli Mendoza <small>· Malbec · 750 ml</small></span><span class="d"></span><span class="p">$30.500</span></li>
+<li><span class="n">Familia Schroeder <small>· Pinot Noir · 750 ml</small></span><span class="d"></span><span class="p">$50.400</span></li>
+</ul></section>
+<section id="blancos"><h2>Vinos blancos</h2><ul>
+<li><span class="n">Rincón Famoso <small>· Blanco · 375 ml</small></span><span class="d"></span><span class="p">$3.000</span></li>
+</ul></section>
+<section id="dulces"><h2>Vinos dulces</h2><ul>
+<li><span class="n">Santa Julia <small>· Tardío · 500 ml</small></span><span class="d"></span><span class="p">$7.400</span></li>
+<li><span class="n">Santa Julia <small>· Chenin Dulce · 750 ml</small></span><span class="d"></span><span class="p">$7.600</span></li>
+</ul></section>
+<section id="rosados"><h2>Vinos rosados</h2><ul>
+<li><span class="n">Terrazas de los Andes <small>· Reserva Malbec Rosé · 750 ml</small></span><span class="d"></span><span class="p">$19.500</span></li>
+</ul></section>
+<section id="espumantes"><h2>Espumantes</h2><ul>
+<li><span class="n">Perro Callejero <small>· Extra Brut · 750 ml</small></span><span class="d"></span><span class="p">$11.200</span></li>
+<li><span class="n">Salentein <small>· Brut Nature · 750 ml</small></span><span class="d"></span><span class="p">$16.000</span></li>
+<li><span class="n">Chandon <small>· Délice · 750 ml</small></span><span class="d"></span><span class="p">$21.700</span></li>
+<li><span class="n">Chandon <small>· Extra Brut · 750 ml</small></span><span class="d"></span><span class="p">$21.700</span></li>
+</ul></section>
+<section id="aperitivos"><h2>Aperitivos</h2><ul>
+<li><span class="n">Gancia <small>· Sin alcohol · 473 ml</small></span><span class="d"></span><span class="p">$2.900</span></li>
+</ul></section>
+<section id="cervezas"><h2>Cervezas</h2><ul>
+<li><span class="n">Checa <small>· Lager Rubia · 473 ml</small></span><span class="d"></span><span class="p">$2.400</span></li>
+<li><span class="n">Checa <small>· Lager Roja · 473 ml</small></span><span class="d"></span><span class="p">$2.400</span></li>
+<li><span class="n">Checa <small>· Floral · 473 ml</small></span><span class="d"></span><span class="p">$2.400</span></li>
+<li><span class="n">Checa <small>· King Bee Honey · 473 ml</small></span><span class="d"></span><span class="p">$2.400</span></li>
+<li><span class="n">Checa <small>· IPA · 473 ml</small></span><span class="d"></span><span class="p">$3.100</span></li>
+</ul></section>
+<section id="aguas"><h2>Aguas y sodas</h2><ul>
+<li><span class="n">Agua Rumipal <small>· 500 ml</small></span><span class="d"></span><span class="p">$1.000</span></li>
+<li><span class="n">Soda Rumipal <small>· 500 ml</small></span><span class="d"></span><span class="p">$1.000</span></li>
+<li><span class="n">Agua Rumipal <small>· 2 L</small></span><span class="d"></span><span class="p">$1.800</span></li>
+<li><span class="n">Soda Rumipal <small>· 2 L</small></span><span class="d"></span><span class="p">$1.900</span></li>
+</ul></section>
+</main>
+<footer>Precios en pesos argentinos · Sujetos a modificación</footer>
+</body>
+</html>
